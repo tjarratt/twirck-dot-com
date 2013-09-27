@@ -10,23 +10,25 @@
   </head>
   <body>
     <div class="container">
-      <div class="row center">
-        <h1>twIRCk.app</h1>
+      <div class="row">
+        <div class=span4></div>
+        <div class=span4><h1>twIRCk.app</h1></div>
+        <div class=span4></div>
       </div>
       <div class=row>
-        <div class="span3">
+        <div class="span4">
           <h3>/me twerks it with twIRCk</h3>
-          <%= yield %>
         </div>
-        <div class="span6" id=app_icon>
+        <div class=span4>
+          <%= image_tag('twirck.icon.png'); %>
         </div>
-        <div class="span3">
+        <div class="span4">
           <h2>About twIRCk</h2>
           twIRCk is an IRC client for OS X that makes IRC fun, easy and secure. Built specifically to take advantage of the technologies in OS X, twIRCk provides a beautiful, streamlined interface that is elegant and powerful.
         </div>
       </div>
-      <div class="row center">
-        <h4>Available soon on the Mac App Store</h4>
+      <div class="row">
+        <%= yield %>
       </div>
     </div>
   </body>

@@ -1,11 +1,8 @@
 @import "bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 60px; text-align: center; }
 
-.center { text-align: center; }
-
-#app_icon {
-  background-image: url('twirck.icon.png');
-  height: 512px;
-  background-repeat: no-repeat;
+.container .row {
+  margin-bottom: 50px;
 }
+
 @import "bootstrap-responsive";
