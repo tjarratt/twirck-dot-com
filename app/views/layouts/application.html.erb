@@ -10,25 +10,38 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class=row>
+        <div class=span2></div>
+        <div class=span3>
+          Mac App for Mtn. Lion and Mavericks
+        </div>
+        <div class=span2>
+          <a href='http://appstore.com/twIRCk'>
+            <%= image_tag('Download_on_the_Mac_App_Store_Badge_US-UK_165x40_0824.png') %>
+          </a>
+        </div>
+        <div class=span3>
+          A beautiful, modern, extensible IRC client for Mac OS X
+        </div>
+      </div>
+      <div id=title class=row>
         <div class=span4></div>
-        <div class=span4><h1>twIRCk.app</h1></div>
+        <div class=span4><h1>twIRCk</h1></div>
         <div class=span4></div>
       </div>
       <div class=row>
-        <div class="span4">
-          <h3>/me twerks it with twIRCk</h3>
+        <%= yield %>
+      </div>
+      <div class="row footer">
+        <div class=span4>
+          <a href='/about'>About twIRCk.app</a>
         </div>
         <div class=span4>
-          <%= image_tag('twirck.icon.png'); %>
+          <a href='/privacy'>Privacy</a>
         </div>
-        <div class="span4">
-          <h2>About twIRCk</h2>
-          twIRCk is an IRC client for OS X that makes IRC fun, easy and secure. Built specifically to take advantage of the technologies in OS X, twIRCk provides a beautiful, streamlined interface that is elegant and powerful.
+        <div class=span4>
+          <a href='http://appstore.com/twIRCk'>Available on the Mac App Store Now</a>
         </div>
-      </div>
-      <div class="row">
-        <%= yield %>
       </div>
     </div>
   </body>
